@@ -15,7 +15,6 @@ header {
  header img {
    height: 40px;
    width: 180px;
-
  }
  /* CONTENITORE ALL'INTERNO DELL'HEADER */
 .wrapper{
@@ -36,7 +35,7 @@ header {
   padding-left: 20px;
   color: grey;
 }
-.header-left ul li:hover {
+.wrapper a:hover {
   color:black;
 }
 /* HEADER RIGHT */
@@ -46,9 +45,9 @@ header {
   align-items: center;
   justify-content: flex-end;
 }
-.header-right ul li{
+.header-right > ul li{
   display: inline-block;
-  padding-left: 20px;
+
   color: grey;
 }
 .header-right ul li:hover {
@@ -60,7 +59,55 @@ button {
   padding: 15px;
   border-radius: 25px;
   cursor: pointer;
+  margin-left: 15px;
 }
 button:hover {
   background-color: #a00361;
+}
+.wrapper a{
+  text-decoration: none;
+  color: grey;
+}
+/* DROPDOWN */
+.relative{
+  position: relative;
+}
+
+.window{
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+  background: white;
+}
+.window > li{
+  padding: 20px;
+}
+.display-none{
+  display: none;
+}
+/* ---PRODOTTI--- */
+.prodotti {
+  width: 400px;
+  left: -150px;
+
+}
+/* ---AZIENDA--- */
+.azienda {
+  width: 200px;
+  left:-50px;
+}
+/* ---AIUTO--- */
+.aiuto {
+  left: -25px;
+}
+/* ---LINGUE--- */
+.lingue {
+  left:-10px;
+}
+/* ---GENERALI--- */
+.padding-left {
+  padding-left: 20px;
 }
