@@ -87,6 +87,7 @@ button:hover {
 }
 .display-none{
   display: none;
+
 }
 /* ---PRODOTTI--- */
 .prodotti {
@@ -112,6 +113,6 @@ button:hover {
   padding-left: 20px;
 }
 
-.display-none.active {
-  display: flex;
+.active {
+  display: block;
 }
