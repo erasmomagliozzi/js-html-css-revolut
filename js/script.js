@@ -16,16 +16,15 @@
 
 $(document).ready(
   function(){
-    $('li.relative').each(function (){
-      $(this).mouseover(
+    // $('li.relative').each(function (){
+      $('li.relative').mouseover(
         function(){
-          $('ul.window').addClass('.active').removeClass('display-none');
+          $(this).children('ul.display-none').addClass('.active').removeClass('display-none');
        });
-    });
-      $(this).mouseout(
-        function(){
-          $('ul.window').addClass('display-none').removeClass('.active');
-        }
-    );
+       $('ul.display-none').mouseout(
+         function(){
+           $(this).addClass('display-none').removeClass('.active');
+         });
+    // });
   }
 );
